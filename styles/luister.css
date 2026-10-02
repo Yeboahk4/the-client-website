@@ -1,0 +1,104 @@
+@font-face {
+  font-family: 'U8 Bold Web';
+  src: url('/fonts/U8-Bold-Web.woff2') format('woff2'),
+       url('/fonts/U8-Bold-Web.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  height: 510px;
+  background-color: #FED200;
+}
+
+.topsection_header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+.main_navbar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.main_navbar li a {
+  font-family: 'U8 Bold Web', sans-serif;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.main_navbar a[aria-current="page"] {
+  border-bottom: 2px solid white;
+}
+
+.hvana_logo a {
+  font-family: 'U8 Bold Web';
+  font-size: 32px;
+  color: #FFFFFF;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+
+.sm_navbar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+}
+
+.sm_navbar li a {
+  font-family: 'U8 Bold Web';
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+header h1 {
+  font-family: 'Domaine Display Narrow Web Black';
+  font-size: 64px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: 40px;
+  justify-self: center;
+}
+
+.recent {
+  padding: 60px 80px;
+}
+
+.recent h2 {
+  font-family: 'U8 Bold Web';
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.podcast-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+.podcast-item img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.podcast-item h3 {
+  font-family: 'U8 Bold Web';
+  text-align: center;
+  margin-top: 10px;
+}

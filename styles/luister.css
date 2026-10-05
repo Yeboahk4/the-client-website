@@ -12,15 +12,14 @@ body {
 }
 
 header {
+  display: grid;
+  grid-template-rows: 1fr 5fr;
   height: 510px;
   background-color: #FED200;
     h1 {
       font-family: 'Domaine Display Narrow Web Black';
-      font-size: 64px;
+      font-size: 112px;
       color: #FFFFFF;
-      text-align: center;
-      margin-top: 40px;
-      justify-self: center;
     }
 }
 
@@ -29,6 +28,12 @@ header {
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   padding: 20px 30px;
+}
+.bottomsection_header {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 
 .main_navbar {
@@ -42,6 +47,7 @@ header {
       color: #FFFFFF;
       text-decoration: none;
       font-size: 14px;
+      font-weight: bold;
     }
     a[aria-current="page"] {
       border-bottom: 2px solid white;
@@ -73,6 +79,10 @@ header {
       text-decoration: none;
       font-size: 14px;
   }
+    img {
+      height: 24px;
+      width: 24.3px;
+    }
 }
 
 .recent {

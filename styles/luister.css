@@ -14,6 +14,14 @@ body {
 header {
   height: 510px;
   background-color: #FED200;
+    h1 {
+      font-family: 'Domaine Display Narrow Web Black';
+      font-size: 64px;
+      color: #FFFFFF;
+      text-align: center;
+      margin-top: 40px;
+      justify-self: center;
+    }
 }
 
 .topsection_header {
@@ -29,26 +37,27 @@ header {
   margin: 0;
   display: flex;
   gap: 20px;
+    li a {
+      font-family: 'U8 Bold Web', sans-serif;
+      color: #FFFFFF;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    a[aria-current="page"] {
+      border-bottom: 2px solid white;
+    }
+
 }
 
-.main_navbar li a {
-  font-family: 'U8 Bold Web', sans-serif;
-  color: #FFFFFF;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-.main_navbar a[aria-current="page"] {
-  border-bottom: 2px solid white;
-}
-
-.hvana_logo a {
-  font-family: 'U8 Bold Web';
-  font-size: 32px;
-  color: #FFFFFF;
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
+.hvana_logo {
+    a {
+      font-family: 'U8 Bold Web';
+      font-size: 32px;
+      color: #FFFFFF;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+    }
 }
 
 .sm_navbar {
@@ -58,33 +67,23 @@ header {
   display: flex;
   gap: 15px;
   justify-content: flex-end;
-}
-
-.sm_navbar li a {
-  font-family: 'U8 Bold Web';
-  color: #FFFFFF;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-header h1 {
-  font-family: 'Domaine Display Narrow Web Black';
-  font-size: 64px;
-  color: #FFFFFF;
-  text-align: center;
-  margin-top: 40px;
-  justify-self: center;
+    li a {
+      font-family: 'U8 Bold Web';
+      color: #FFFFFF;
+      text-decoration: none;
+      font-size: 14px;
+  }
 }
 
 .recent {
   padding: 60px 80px;
+    h2 {
+      font-family: 'U8 Bold Web';
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
 }
 
-.recent h2 {
-  font-family: 'U8 Bold Web';
-  font-size: 32px;
-  margin-bottom: 40px;
-}
 
 .podcast-grid {
   display: grid;
@@ -92,13 +91,14 @@ header h1 {
   gap: 40px;
 }
 
-.podcast-item img {
-  width: 100%;
-  border-radius: 8px;
-}
-
-.podcast-item h3 {
-  font-family: 'U8 Bold Web';
-  text-align: center;
-  margin-top: 10px;
+.podcast-item {
+    img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    h3 {
+      font-family: 'U8 Bold Web';
+      text-align: center;
+      margin-top: 10px;
+    }
 }

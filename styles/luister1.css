@@ -1,0 +1,540 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Playfair+Display:wght@900&display=swap');
+
+body {
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+  background-color: #fff;
+  color: #000;
+  padding-top: 69px;
+}
+
+.topsection_header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #FED200;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  padding: 20px 30px;
+  box-sizing: border-box;
+}
+.topsection_header.scrolled {
+  background-color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+.topsection_header.scrolled a,
+.topsection_header.scrolled i {
+  color: #FED200;
+}
+.topsection_header.scrolled .main_navbar a[aria-current="page"]::after {
+  background-color: #FED200;
+}
+
+
+.main_navbar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 30px;
+}
+
+.main_navbar li a {
+  font-family: Montserrat, sans-serif;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 800;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.main_navbar li a:hover {
+  opacity: 0.8;
+}
+
+.main_navbar a[aria-current="page"]::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #FFFFFF;
+}
+
+.hvana_logo a {
+  font-family: Montserrat, sans-serif;
+  font-size: 32px;
+  color: #FFFFFF;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+
+.sm_navbar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+}
+
+.sm_navbar i {
+  font-size: 24px;
+  color: #FFFFFF;
+  transition: color 0.2s ease;
+}
+
+.sm_navbar i:hover {
+  color: #46494a;
+}
+
+.hero {
+  background: linear-gradient(180deg, #FED200 0%, #e5c000 100%);
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 80px;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.hero-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 96px;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.hero-content p {
+  font-family: Montserrat, sans-serif;
+  color: #FFFFFF;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.hero-content .cta {
+  margin-top: 20px;
+  display: inline-block;
+  background: #fff;
+  color: #000;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 800;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.hero-content .cta:hover {
+  background: #000;
+  color: #fff;
+}
+
+.featured {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 60px 80px;
+  gap: 40px;
+}
+
+.featured-image {
+  background: url('../assets/featured.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  height: 300px;
+}
+
+.featured-info h2 {
+  font-family: Montserrat, sans-serif;
+  font-size: 32px;
+}
+
+.featured-info h3 {
+  font-family: Montserrat, sans-serif;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.featured-info p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.play-btn {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #FED200;
+  border: none;
+  border-radius: 6px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.filters {
+  display: flex;
+  gap: 12px;
+  padding: 20px 80px;
+}
+
+.filter {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.filter.active {
+  background: #FED200;
+  border-color: #FED200;
+}
+
+.filter:hover {
+  background: #FED200;
+  border-color: #FED200;
+  color: #fff;
+}
+#recent {
+  scroll-margin-top: 150px;
+}
+
+
+.podcast-grid {
+  padding: 40px 80px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+}
+
+.podcast-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.podcast-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.podcast-card img {
+  width: 100%;
+  display: block;
+}
+
+.podcast-card .info {
+  padding: 12px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+}
+
+.play-overlay {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background: #fff;
+  padding: 8px 12px;
+  border-radius: 50%;
+  font-size: 18px;
+}
+.hvana_signup {
+  background: #0050ff;
+  padding: 60px 80px;
+  color: #fff;
+}
+
+.signup_container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.signup_social h3,
+.signup_form h3 {
+  font-family: Montserrat, sans-serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.signup_social ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.signup_social a {
+  color: #fff;
+  font-size: 28px;
+  transition: opacity 0.2s ease;
+}
+
+.signup_social a:hover {
+  opacity: 0.7;
+}
+
+.signup_form p {
+  margin: 0 0 15px 0;
+  font-size: 16px;
+}
+
+.signup_form form {
+  display: flex;
+  gap: 10px;
+}
+
+.signup_form input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+}
+
+.signup_form button {
+  padding: 12px 24px;
+  background: #FED200;
+  border: none;
+  border-radius: 6px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.signup_form button:hover {
+  background: #e5c000;
+}
+
+
+.hvana_footer {
+  background-color: #111;
+  color: #fff;
+  padding: 40px 0 20px;
+  text-align: center;
+}
+
+.footer_content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer_logo a {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer_nav,
+.footer_social {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.footer_nav a,
+.footer_social a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer_nav a:hover,
+.footer_social a:hover {
+  color: #f5c518;
+}
+
+.footer_bottom {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 2000;
+}
+
+.hamburger span {
+  width: 28px;
+  height: 3px;
+  background: #fff;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+/* Mobile menu */
+.mobile_menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 70%;
+  height: 100vh;
+  background: #FED200;
+  padding: 80px 30px;
+  box-shadow: -4px 0 20px rgba(0,0,0,0.2);
+  transition: right 0.3s ease;
+  z-index: 1500;
+}
+
+.mobile_menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mobile_menu a {
+  font-size: 20px;
+  font-weight: 800;
+  color: #FFF;
+  text-decoration: none;
+}
+
+.mobile_menu.open {
+  right: 0;
+}
+.topsection_header.scrolled .hamburger span {
+  background-color: #FED200;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+
+  body {
+    padding-top: 60px;
+  }
+
+  .topsection_header {
+    grid-template-columns: 1fr;
+    padding: 15px 20px;
+  }
+
+  .main_navbar {
+    display: none;
+  }
+
+  .sm_navbar {
+    display: none;
+  }
+
+  .hvana_logo a {
+    justify-content: center;
+    font-size: 28px;
+  }
+  .hamburger {
+    display: flex;
+  }
+
+  .main_navbar,
+  .sm_navbar {
+    display: none;
+  }
+
+  .hero {
+    height: auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .hero-content {
+    padding: 0;
+    margin: 0;
+  }
+
+  .hero-content h1 {
+    font-size: 60px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+  }
+
+  .hero-content .cta {
+    margin-top: 20px;
+  }
+
+  .featured {
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+  }
+
+  .featured-image {
+    height: 220px;
+  }
+
+  .filters {
+    padding: 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .filter {
+    flex-shrink: 0;
+  }
+
+  .podcast-grid {
+    padding: 20px;
+    grid-template-columns: 1fr;
+  }
+
+  .hvana_footer {
+    padding: 30px 20px;
+  }
+
+  .footer_content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer_nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer_social {
+    gap: 15px;
+  }
+}
+

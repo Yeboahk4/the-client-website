@@ -28,6 +28,8 @@ Ook is er een filter functie toegevoegd zodat je op basis van categorie gemakkel
 Ik heb gebruik gemaakt van: Grid voor de website structuur en de content erin is ook gemaakt met grid en flex.
 Hier heb ik flex gebruikt:
 https://github.com/Yeboahk4/the-client-website/blob/main/styles/luister1.css#L184
+en hier heb ik gebruik gemaakt van grid:
+https://github.com/Yeboahk4/the-client-website/blob/main/styles/luister1.css#L18-L19
 
 Mijn HTML is opgebouwd in een semantatische structuur, waaronder een beetje gebruik wordt gemaakt van Javascript.
 

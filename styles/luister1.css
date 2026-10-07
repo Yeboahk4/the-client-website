@@ -449,6 +449,7 @@ body {
   .topsection_header {
     grid-template-columns: 1fr;
     padding: 15px 20px;
+    width: clamp(375px, 100%, 768px)
   }
 
   .main_navbar {

@@ -54,7 +54,7 @@ body {
 }
 
 .main_navbar li a:hover {
-  opacity: 0.8;
+  border-bottom: 2px #fff solid;
 }
 
 .main_navbar a[aria-current="page"]::after {
@@ -111,6 +111,7 @@ body {
   font-size: 96px;
   color: #FFFFFF;
   margin: 0;
+  /*text-shadow: 1px 1px #000;*/
 }
 
 .hero-content p {
@@ -118,6 +119,7 @@ body {
   color: #FFFFFF;
   font-size: 20px;
   margin-top: 10px;
+  /*text-shadow: 1px 1px #000;*/
 }
 
 .hero-content .cta {
@@ -449,7 +451,6 @@ body {
   .topsection_header {
     grid-template-columns: 1fr;
     padding: 15px 20px;
-    width: clamp(375px, 100%, 768px)
   }
 
   .main_navbar {

@@ -21,7 +21,9 @@ body {
     background-color: #FED200;
     align-items: center;
 }
-
+.main_navbar {
+    display: none;
+}
 .hvana_logo a {
     display: flex;
     justify-content: center;
@@ -29,6 +31,9 @@ body {
     font-weight: 700;
     color: #fff;
     text-decoration: none;
+}
+.sm_navbar {
+    display: none;
 }
 
 

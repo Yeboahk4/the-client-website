@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+    margin: 0;
+    font-family: Montserrat, sans-serif;
+    background-color: #fff;
+    color: #000;
+    padding-top: 60px;
+}
+/*===== TOP NAVBAR =====*/
+.topsection_header {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 15px 20px;
+    background-color: #FED200;
+    align-items: center;
+}
+
+.hvana_logo a {
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/*===== MOBILE MENU =====*/
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    span {
+        width: 28px;
+        height: 3px;
+        background-color: #fff;
+        border-radius: 3px;
+        transition: 0.3s;
+    }
+}
+
+.mobile_menu {
+    background-color: #FED200;
+}

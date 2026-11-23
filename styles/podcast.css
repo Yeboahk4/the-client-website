@@ -13,6 +13,7 @@
     font-display: swap;
 }
 
+
 body {
     margin: 0;
     font-family: Montserrat, sans-serif;
@@ -107,7 +108,7 @@ body {
     right: 0;
 }
 
-/*===== HERO CONTENT =====*/
+/*===== HERO CONTENT CSS =====*/
 
 /* Volledige header */
 .hero {
@@ -149,4 +150,47 @@ body {
         background-color: #000;
         color: #fff;
     }
+}
+
+/*===== FEATURED CSS =====*/
+
+.featured {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+
+}
+.featured-image {
+    background: url('../assets/pexels-george-milton-6953673.jpg');
+    height: 260px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+}
+.featured-info {
+    font-family: Montserrat, sans-serif;
+    
+    h2 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 24px;
+        margin-top: 10px;        
+    }
+    
+    p {
+        font-size: 16px;
+        margin-top: 10px; 
+    }
+}
+.play-btn {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: #FED200;
+    border: none;
+    border-radius: 6px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 900;
+    cursor: pointer;    
 }

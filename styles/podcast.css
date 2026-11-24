@@ -336,6 +336,9 @@ body {
 
 /*===== PODCAST CSS =====*/
 
+#recent {
+    scroll-margin-top: 150px;
+}
 .podcast-grid {
     display: grid;
     grid-template-columns: 1fr;

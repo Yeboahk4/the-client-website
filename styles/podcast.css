@@ -29,7 +29,22 @@ body {
     padding: 15px 20px;
     background-color: #FED200;
     align-items: center;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
 }
+.topsection_header.scrolled {
+  background-color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+.topsection_header.scrolled a {
+  color: #FED200;
+  text-shadow: none;
+}
+
 .main_navbar {
     display: none;
 }
@@ -75,6 +90,9 @@ body {
 .hamburger.active span:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
+.topsection_header.scrolled .hamburger span {
+  background-color: #FED200;
+}
 
 .mobile_menu {
     background-color: #FED200;
@@ -112,7 +130,7 @@ body {
 
 /* Volledige header */
 .hero {
-    background-color: #FED200;
+    background: linear-gradient(180deg, #FED200 0%, #e5c000 100%);
     height: auto;
     text-align: center;
     padding: 40px 20px;

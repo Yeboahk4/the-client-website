@@ -255,6 +255,12 @@ body {
     grid-template-columns: 1fr;
     padding: 40px 20px;
 
+    @media (min-width: 768px) {
+     grid-template-columns: repeat(2, 1fr);
+     padding: 60px 80px;
+     gap: 40px;   
+    }
+
 }
 .featured-image {
     background: url('../assets/pexels-george-milton-6953673.jpg');
@@ -262,6 +268,10 @@ body {
     background-size: cover;
     background-position: center;
     border-radius: 12px;
+
+    @media (min-width: 768px) {
+        height: 300px;
+    }
 }
 .featured-info {
     font-family: Montserrat, sans-serif;
@@ -279,6 +289,7 @@ body {
         font-size: 16px;
         margin-top: 10px; 
     }
+
 }
 .play-btn {
     margin-top: 20px;

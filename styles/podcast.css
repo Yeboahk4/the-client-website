@@ -341,6 +341,10 @@ body {
     grid-template-columns: 1fr;
     padding: 20px;
     gap: 40px;
+
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
 }
 
 .podcast-card {

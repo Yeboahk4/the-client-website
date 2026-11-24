@@ -34,6 +34,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 1000; /* hiermee is de nav altijd naar VOREN en wordt niet overlapt door andere content op de website */
 
 }
 .topsection_header.scrolled {

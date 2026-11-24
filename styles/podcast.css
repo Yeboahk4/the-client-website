@@ -212,3 +212,35 @@ body {
     font-weight: 900;
     cursor: pointer;    
 }
+
+/*===== FILTER CSS =====*/
+
+.filters {
+    display: flex;
+    gap: 12px;
+    padding: 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.filter {
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: #FED200;
+        border-color: #FED200;
+        color: #fff;
+    }
+    &.active {
+        background-color: #FED200;
+        border-color: #FED200;
+
+}
+}

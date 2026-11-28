@@ -1,44 +1,59 @@
-# The Client - Website
+# HvanA Podcast Pagina Redesign
 
-Ontwerp en maak een website voor een opdrachtgever en bespreek het resultaat tijdens de Sprint Review.
+## Over het project
 
-De instructie van deze leertaak staan in de [WIKI](https://github.com/fdnd-task/the-client-website/wiki)
+Voor deze opdracht kregen wij de taak om de website van de HvanA een frisse uitstraling te geven en een gebruiksvriendelijke mobiele versie te ontwikkelen.
 
+Mijn verantwoordelijkheid binnen dit project was het herontwerpen van de **Podcast-pagina**. Hierbij heb ik de pagina een sterkere focus gegeven op het luisteraspect van podcasts, zodat bezoekers direct worden aangemoedigd om content te ontdekken en te beluisteren. De oorspronkelijke huisstijl van de HvanA is behouden, terwijl de visuele hiërarchie is verbeterd voor een aantrekkelijkere en overzichtelijkere gebruikerservaring.
 
+## Features
 
-## Inhoudsopgave Readme
+### Mobile First
+De website is volledig ontwikkeld volgens het **mobile-first principe**. Hierdoor is de ervaring geoptimaliseerd voor mobiele apparaten en schaalt de layout vervolgens op naar grotere schermformaten.
 
-  * [Beschrijving](#beschrijving)
-  * [Kenmerken](#kenmerken)
-  * [Bronnen](#bronnen)
-  * [Licentie](#licentie)
+### Navigatie
+- Gele navigatiebalk geïnspireerd op de originele HvanA-website.
+- Navigatiebalk verandert van kleur tijdens het scrollen.
+- Hamburger menu voor mobiele apparaten.
+- Hamburger icoon transformeert naar een "X" wanneer het menu geopend is.
 
-## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
-Wij hebben als opdracht gekregen om de Hvana pagina een frisse look te geven en een mooie mobiele versie te maken.
-Ik heb de opdracht gekregen om aan de 'Podcast' pagina te werken. Wat ik heb gedaan is de Podcast pagina een wat meer "luister" gevoel te geven, voor een wat aantrekkelijkere look. 
+### Call To Action
+- Een CTA-knop met de tekst **"Ontdek de nieuwste afleveringen"**.
+- De knop scrollt gebruikers direct naar de podcastsectie.
 
-Het oorspronkelijke thema heb ik behouden maar de visuele hierarchie aangepast.
-Er is een featured blok toegevoegd waarin je een "uitgelichte aflevering" ziet.
-Ook is er een filter functie toegevoegd zodat je op basis van categorie gemakkelijk kunt vinden waar jij liever naar wilt luisteren.
-Je hebt een formulierpagina die gedeeltelijk lijkt op zijn huidige formulier pagina, met een soortgelijke footer die wat overzichtelijker en kleiner is.
+### Uitgelichte Aflevering
+- Toevoeging van een featured blok waarin een uitgelichte podcastaflevering centraal staat.
 
+### Filterfunctionaliteit
+- Podcasts kunnen gefilterd worden op categorie. (Nog niet functionerend)
+- Hierdoor kunnen gebruikers sneller content vinden die aansluit bij hun interesses.
+- Op kleinere schermformaten wordt automatisch een horizontale scroll toegevoegd voor de filteropties.
 
-## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
-Ik heb gebruik gemaakt van: Grid voor de website structuur en de content erin is ook gemaakt met grid en flex.
-<br>
-Hier heb ik flex gebruikt:
-https://github.com/Yeboahk4/the-client-website/blob/main/styles/luister1.css#L184
-<br>
-en hier heb ik gebruik gemaakt van grid:
-https://github.com/Yeboahk4/the-client-website/blob/main/styles/luister1.css#L18-L19
+### Footer
+- Een compacte en overzichtelijke footer die aansluit bij de rest van het ontwerp, die soortgelijk is aan de huidige HvanA website
 
-Mijn HTML is opgebouwd in een semantatische structuur, waaronder een beetje gebruik wordt gemaakt van Javascript.
+## Responsive Design
 
+De website is toegankelijk en bruikbaar op zowel mobiele apparaten als desktopcomputers.
 
+### Mobiel
+- Geoptimaliseerde mobiele navigatie.
+- Horizontaal scrollbare filters.
+- Overzichtelijke contentstructuur.
+
+### Desktop
+- Schaalbare layout gebaseerd op schermgrootte.
+- Podcastkaarten worden overzichtelijk weergegeven en passen zich automatisch aan het beschikbare schermoppervlak aan.
+
+## Gebruikte technologieën
+
+- HTML
+- CSS
+- JavaScript
+
+## Doel
+
+Het doel van deze redesign was om de podcastpagina aantrekkelijker, overzichtelijker en gebruiksvriendelijker te maken, zonder de herkenbare HvanA-huisstijl te verliezen.
 
 
 ## Licentie
